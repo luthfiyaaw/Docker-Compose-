@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background-color: #e1dad3;
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #bb7b85;
+      margin: 0;
+    }
+    header p {
+      font-size: 1rem;
+      color: #666;
+    }
+    form {
+      margin-top: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-size: 0.9rem;
+      color: #4a4a4a;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    input[type="text"] {
+      width: 122%;
+      padding: 10px;
+      border: 2px solid #bb7b85;
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+    }
+    input[type="text"]:focus {
+      border-color: #bb7b85;
+      box-shadow: 0 0 5px rgba(255, 105, 180, 0.6);
+    }
+    button {
+      background-color: #bb7b85;
+      color: #fff;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #f5b6fa;
+      transform: scale(1.1);
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    footer p {
+      margin: 0;
+    }
+    header {
+    text-align: center; 
+    position: relative; 
+}
+
+header::before {
+    content: ""; 
+    display: block;
+    width: 80px; 
+    height: 80px;
+    background-image: url('kupu.jpg');
+    background-size: cover; 
+    margin-bottom: 10px; 
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+;
+  </style>
+  <title>Event Registration</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Flower Event Registration</h1>
+      <p>Join the most beautiful event in the world!</p>
+    </header>
+    <main style="display: flex; align-items: center; gap: 20px;">
+        <img src="BABABABABA.jpg" alt="Event Image" style="width: 150px; height: auto; border-radius: 10px;">
+      <form action="/submit.php" method="POST">
+        <div class="form-group">
+          <label for="name">Your Full Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g., Chibi maruko-chan" required>
+        </div>
+        <div class="form-group">
+          <label for="Major">Major</label>
+          <input type="text" id="Major" name="Major" placeholder="e.g., Sains Data" required>
+        </div>
+        <div class="form-group">
+          <label for="University">University</label>
+          <input type="text" id="University" name="University" placeholder="e.g.,University state of Surabaya" required>
+        </div>
+        <button type="submit" style="width:150px;height:50px;display: block;margin: 0 auto; margin-left: 50px;">Join Now! 💐</button>
+        </form>
+      </main>        
+    <footer>
+      <p>© 2024 Event Registration. Powered by lulala company 😼🫧</p>
+    </footer>
+    
+  </div>
+</body>
+</html>
